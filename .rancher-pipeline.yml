@@ -2,7 +2,7 @@ stages:
 - name: compile
   steps:
   - runScriptConfig:
-      image: maven:3.5.0-jdk-8-alpine
+      image: wangzhenalex/maven-aliyun
       shellScript: mvn clean package
 - name: publish
   steps:
